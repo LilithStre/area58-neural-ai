@@ -67,4 +67,3 @@ TBD — will be decided before v0.1.
 ---
 
 *Built with archiso. Powered by coffee and threadirqs.*
-MIOEOF
