@@ -1,0 +1,4 @@
+[Desktop Entry]
+Type=Application
+Name=Area58 wallpaper
+Exec=/usr/bin/bash /usr/local/bin/area58-wallpaper.sh

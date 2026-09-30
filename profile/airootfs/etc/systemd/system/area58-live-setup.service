@@ -1,0 +1,11 @@
+[Unit]
+Description=Area58 - crea l'utente live
+Before=sddm.service display-manager.service
+After=local-fs.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/bash /usr/local/bin/area58-live-setup.sh
+
+[Install]
+WantedBy=multi-user.target

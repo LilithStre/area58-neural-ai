@@ -39,7 +39,7 @@ ls -lh out/
 
 if [ "${1:-}" = "test" ]; then
     ISO="$(ls -t out/*.iso | head -n1)"
-    CMD=(qemu-system-x86_64 -enable-kvm -cpu host -m 4096 -smp 4 -cdrom "$ISO")
+    CMD=(qemu-system-x86_64 -enable-kvm -cpu host -m 6144 -smp 4 -cdrom "$ISO" -vga virtio)
     for f in /usr/share/OVMF/OVMF_CODE_4M.fd /usr/share/OVMF/OVMF_CODE.fd; do
         if [ -f "$f" ]; then
             CMD+=(-drive "if=pflash,format=raw,readonly=on,file=$f")
