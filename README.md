@@ -45,7 +45,7 @@ Requires an Arch Linux host with `archiso`:
 
 ```bash
 sudo pacman -S archiso
-sudo ./profile/build.sh -v -w work -o out/
+sudo mkarchiso -v -w work -o out/ profile/
 ```
 
 Test in QEMU:
